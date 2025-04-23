@@ -1,7 +1,7 @@
 /* Global Styles */
 :root {
-  --primary-color: #f5e6e0;
-  --secondary-color: #d4a373;
+  --primary-color: #f5e6e0; /* very light orange */
+  --secondary-color: #3887BE; /* darker blue */
   --text-color: #5c4f3d;
   --light-color: #ffffff;
   --dark-color: #2c2c2c;

@@ -25,10 +25,10 @@ export default function Navbar() {
             <Link href="/#svatebni-informace" className="navbar-link">Svatební informace</Link>
           </li>
           <li>
-            <Link href="/#svatebni-den" className="navbar-link">Svatební den</Link>
+            <Link href="/#gallery" className="navbar-link">Galerie</Link>
           </li>
           <li>
-            <Link href="/#vice-info" className="navbar-link">Více info</Link>
+            <Link href="/#timeline" className="navbar-link">Naše cesta</Link>
           </li>
           <li>
             <Link href="/#misto-svatby" className="navbar-link">Místo svatby</Link>
