@@ -8,7 +8,7 @@ export default function Timeline() {
     {
       date: '2021',
       title: 'První rande Na tý Louce Zelený',
-      description: 'Martin vzal Baru s bezlepkovou dietou na tamní sekanou v housce'
+      description: 'Martin vzal Báru s bezlepkovou dietou na tamní sekanou v housce'
     },
     {
       date: '28. října 2024',
@@ -16,9 +16,9 @@ export default function Timeline() {
       description: 'Na výročí republiky se nám narodil malý Isildur'
     },
     {
-      date: '22. března 2025',
+      date: '28. března 2025',
       title: 'Zasnoubení u hromady hnoje',
-      description: 'Martin požádal báru o ruku při západu slunce u hromady hnoje a ani nepočkal jestli Bára řekne ano."'
+      description: 'Martin požádal báru o ruku při západu slunce u hromady hnoje a ani nepočkal jestli Bára řekne ano.'
     },
     {
       date: '4. října 2025',
