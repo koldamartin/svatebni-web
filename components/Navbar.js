@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="container navbar-container">
-        <Link href="/" className="navbar-logo">
+        <Link href="/" className="navbar-logo" legacyBehavior>
           BÁRA & MARTIN
         </Link>
 
@@ -19,23 +19,22 @@ export default function Navbar() {
 
         <ul className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
           <li>
-            <Link href="/" className="navbar-link">Úvod</Link>
+            <Link href="/" className="navbar-link" legacyBehavior>Úvod</Link>
           </li>
           <li>
-            <Link href="/#svatebni-informace" className="navbar-link">Svatební informace</Link>
+            <Link href="/#svatebni-informace" className="navbar-link" legacyBehavior>Svatební informace</Link>
           </li>
           <li>
-            <Link href="/#gallery" className="navbar-link">Galerie</Link>
+            <Link href="/#gallery" className="navbar-link" legacyBehavior>Galerie</Link>
           </li>
           <li>
-            <Link href="/#timeline" className="navbar-link">Naše cesta</Link>
+            <Link href="/#timeline" className="navbar-link" legacyBehavior>Naše cesta</Link>
           </li>
           <li>
-            <Link href="/#misto-svatby" className="navbar-link">Místo svatby</Link>
+            <Link href="/#misto-svatby" className="navbar-link" legacyBehavior>Místo svatby</Link>
           </li>
         </ul>
       </div>
-
       <style jsx>{`
         .navbar {
           background-color: white;

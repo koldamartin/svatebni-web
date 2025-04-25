@@ -11,7 +11,7 @@ export default function Hero() {
           <div className="hero-buttons">
             <a href="#gallery" className="btn">Prohlédnout galerii</a>
             <a href="#svatebni-informace" className="btn btn-outline">Svatební informace</a>
-            <Link href="/rsvp"><a className="btn">Potvrď účast</a></Link>
+            <Link href="/rsvp" legacyBehavior><a className="btn">Potvrď účast</a></Link>
           </div>
         </div>
         <div className="hero-image-container">
@@ -25,7 +25,6 @@ export default function Hero() {
           />
         </div>
       </div>
-
       <style jsx>{`
         .hero {
           padding: 5rem 0;

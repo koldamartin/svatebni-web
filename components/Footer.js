@@ -15,11 +15,11 @@ export default function Footer() {
           <div className="footer-links">
             <h4>Navigace</h4>
             <ul>
-              <li><Link href="/">Domů</Link></li>
-              <li><Link href="/#svatebni-informace">Svatební informace</Link></li>
-              <li><Link href="/#gallery">Galerie</Link></li>
-              <li><Link href="/#timeline">Časová osa</Link></li>
-              <li><Link href="/#memories">Vzpomínky</Link></li>
+              <li><Link href="/" legacyBehavior>Domů</Link></li>
+              <li><Link href="/#svatebni-informace" legacyBehavior>Svatební informace</Link></li>
+              <li><Link href="/#gallery" legacyBehavior>Galerie</Link></li>
+              <li><Link href="/#timeline" legacyBehavior>Časová osa</Link></li>
+              <li><Link href="/#memories" legacyBehavior>Vzpomínky</Link></li>
             </ul>
           </div>
           
@@ -35,7 +35,6 @@ export default function Footer() {
           <p>&copy; {currentYear} Svatba Bára & Martin. Všechna práva vyhrazena.</p>
         </div>
       </div>
-
       <style jsx>{`
         .footer {
           background-color: var(--primary-color);

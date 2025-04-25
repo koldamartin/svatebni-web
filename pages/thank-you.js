@@ -11,7 +11,7 @@ export default function ThankYou() {
         <div className="container text-center">
           <h1 className="section-title">Děkujeme za potvrzení</h1>
           <p>Vaše odpověď byla úspěšně odeslána. Těšíme se na vás!</p>
-          <Link href="/"><a className="btn">Zpět na hlavní stránku</a></Link>
+          <Link href="/" className="btn">Zpět na hlavní stránku</Link>
         </div>
       </section>
     </>
