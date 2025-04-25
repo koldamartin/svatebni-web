@@ -1,3 +1,9 @@
+// Load env and init Supabase client
+require('dotenv').config();
+const { SUPABASE_DATABASE_URL, SUPABASE_SERVICE_ROLE_KEY } = process.env;
+const { createClient } = require('@supabase/supabase-js');
+const supabase = createClient(SUPABASE_DATABASE_URL, SUPABASE_SERVICE_ROLE_KEY);
+
 exports.handler = async (event, context) => {
   if (event.httpMethod !== 'POST') {
     return { statusCode: 405, body: 'Method Not Allowed' };
@@ -59,6 +65,14 @@ exports.handler = async (event, context) => {
 
     // Invoke the model with the messages
     const response = await model.invoke(messages);
+
+    // Insert question and AI response into Supabase
+    const { data: insertData, error: insertError } = await supabase
+      .from('svatba-chatbot')
+      .insert([{ user_question: question, ai_response: response.content }]);
+    if (insertError) {
+      console.error('Supabase insert error:', insertError);
+    }
 
     return {
       statusCode: 200,
