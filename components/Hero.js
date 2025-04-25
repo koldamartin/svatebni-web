@@ -17,7 +17,7 @@ export default function Hero() {
   // Calculate time until wedding date
   useEffect(() => {
     // Set wedding date - October 4th, 2025
-    const weddingDate = new Date('2025-10-04T16:00:00');
+    const weddingDate = new Date('2025-10-04T12:00:00');
     
     setIsVisible(true);
     
@@ -87,8 +87,8 @@ export default function Hero() {
             <Link href="/rsvp" legacyBehavior>
               <a className="btn btn-primary pulse-animation">Potvrď účast</a>
             </Link>
-            <Link href="/info" legacyBehavior>
-              <a className="btn btn-outline fade-in-delay">Informace</a>
+            <Link href="#chatbot" legacyBehavior>
+              <a className="btn btn-outline fade-in-delay">Chci vědět víc</a>
             </Link>
           </div>
         </div>
@@ -139,7 +139,7 @@ export default function Hero() {
           left: 0;
           right: 0;
           bottom: 0;
-          background: linear-gradient(135deg, rgba(245, 230, 224, 0.92) 0%, rgba(245, 230, 224, 0.85) 100%);
+          background: linear-gradient(135deg, rgba(245, 230, 224, 0.75) 0%, rgba(245, 230, 224, 0.65) 100%);
           z-index: 1;
         }
 
