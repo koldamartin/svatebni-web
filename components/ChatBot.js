@@ -6,23 +6,37 @@ export default function ChatBot() {
   const [message, setMessage] = useState('');
   const [chatHistory, setChatHistory] = useState([]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!message.trim()) return;
     
+    // Create a new array with the user message to avoid state update delays
+    const updatedHistory = [...chatHistory, { sender: 'user', text: message }];
+    
     // Add user message to chat history
-    setChatHistory([...chatHistory, { sender: 'user', text: message }]);
+    setChatHistory(updatedHistory);
     
     // Clear input field
     setMessage('');
     
-    // Simulate AI response (this will be replaced with actual backend later)
-    setTimeout(() => {
-      setChatHistory(prev => [
-        ...prev, 
-        { sender: 'bot', text: 'Děkuji za vaši zprávu! Tato funkce bude brzy k dispozici.' }
-      ]);
-    }, 1000);
+    try {
+      const res = await fetch('/.netlify/functions/ask', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ 
+          question: message,
+          history: updatedHistory // Send the updated chat history including the current message
+        }),
+      });
+      const data = await res.json();
+      if (data.text) {
+        setChatHistory(prev => [...prev, { sender: 'bot', text: data.text }]);
+      } else {
+        setChatHistory(prev => [...prev, { sender: 'bot', text: `Error: ${data.error}` }]);
+      }
+    } catch (error) {
+      setChatHistory(prev => [...prev, { sender: 'bot', text: `Error: ${error.message}` }]);
+    }
   };
 
   return (
