@@ -89,6 +89,13 @@ export default function WeddingVenue() {
           padding: 1.5rem;
           border-radius: 8px;
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+          transition: all 0.3s ease;
+          cursor: pointer;
+        }
+        
+        .detail-item:hover {
+          transform: scale(1.05);
+          box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
         }
         
         .detail-item h3 {

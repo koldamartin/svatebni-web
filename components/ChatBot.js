@@ -50,7 +50,7 @@ export default function ChatBot() {
             {chatHistory.length === 0 ? (
               <div className="empty-chat">
                 <ChatBotIcon size={40} />
-                <p>Zeptejte se nás našeho AI asistenta, ten ví o svatbě mnohem víc.</p>
+                <p>Zeptejte se našeho AI asistenta, ten ví o svatbě mnohem víc.</p>
               </div>
             ) : (
               chatHistory.map((chat, index) => (

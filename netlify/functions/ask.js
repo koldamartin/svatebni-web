@@ -37,7 +37,7 @@ exports.handler = async (event, context) => {
 
     // System message with instructions
     const systemMessage = new SystemMessage(
-      "You are a helpful wedding assistant for Martin and his fiancée's wedding website. " +
+      "You are a helpful wedding assistant for Martin and his fiancée Bára. " +
       "You should answer questions about their wedding, venue, schedule, and other related topics " +
       "in a friendly and informative way. But keep the responses concise. Respond in Czech language.\n\n" +
       "Here is what you know:\n" +
