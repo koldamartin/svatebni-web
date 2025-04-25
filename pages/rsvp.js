@@ -1,7 +1,22 @@
+'use client';
+
 import Head from 'next/head';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 export default function RSVP() {
+  const router = useRouter();
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    await fetch('/__forms.html', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formData).toString(),
+    });
+    router.push('/thank-you');
+  };
+
   return (
     <>
       <Head>
@@ -10,13 +25,7 @@ export default function RSVP() {
       <section className="section">
         <div className="container">
           <h1 className="section-title">Potvrď účast</h1>
-          <form
-            name="rsvp"
-            method="POST"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-            action="/thank-you"
-          >
+          <form name="rsvp" onSubmit={handleFormSubmit}>
             <input type="hidden" name="form-name" value="rsvp" />
             <p hidden>
               <label>
