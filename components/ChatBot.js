@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import { Send, Bot, User } from 'lucide-react';
+import { Send, User } from 'lucide-react';
 import { motion } from 'framer-motion';
+import ChatBotIcon from './icons/ChatBotIcon';
 
 export default function ChatBot() {
   const [message, setMessage] = useState('');
@@ -42,14 +43,14 @@ export default function ChatBot() {
   return (
     <section id="chatbot" className="section chatbot">
       <div className="container">
-        <h2 className="section-title">Zeptejte se nás</h2>
+        <h2 className="section-title">Zeptejte se našeho AI asistenta</h2>
         
         <div className="chatbot-container">
           <div className="chat-messages">
             {chatHistory.length === 0 ? (
               <div className="empty-chat">
-                <Bot size={40} />
-                <p>Napište nám zprávu a my vám odpovíme!</p>
+                <ChatBotIcon size={40} />
+                <p>Zeptejte se nás našeho AI asistenta, ten ví o svatbě mnohem víc.</p>
               </div>
             ) : (
               chatHistory.map((chat, index) => (
@@ -61,7 +62,7 @@ export default function ChatBot() {
                   transition={{ duration: 0.3 }}
                 >
                   <div className="message-icon">
-                    {chat.sender === 'bot' ? <Bot size={20} /> : <User size={20} />}
+                    {chat.sender === 'bot' ? <ChatBotIcon size={20} /> : <User size={20} />}
                   </div>
                   <div className="message-text">{chat.text}</div>
                 </motion.div>
@@ -215,6 +216,12 @@ export default function ChatBot() {
           }
         }
       `}</style>
-    </section>
+
+    <style jsx>{`
+      .chatbot {
+        background-color: var(--primary-color);
+      }
+    `}</style>
+  </section>
   );
 }

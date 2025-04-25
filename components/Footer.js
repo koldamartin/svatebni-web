@@ -9,7 +9,9 @@ export default function Footer() {
         <div className="footer-content">
           <div className="footer-logo">
             <h3>Created</h3>
-            <p>Vibe coded thanks to Windsurf.com</p>
+            <p>Vibe coded in <span className="heart">❤️</span> <a href="https://windsurf.com" target="_blank" rel="noopener noreferrer">Windsurf.com</a></p>
+            <h3 style={{ marginTop: '1rem' }}>Webpage code</h3>
+            <p><a href="https://github.com/koldamartin/svatebni-web" target="_blank" rel="noopener noreferrer">GitHub</a></p>
           </div>
           
           <div className="footer-links">
@@ -17,7 +19,7 @@ export default function Footer() {
             <ul>
               <li><Link href="/" legacyBehavior>Domů</Link></li>
               <li><Link href="/#svatebni-informace" legacyBehavior>Svatební informace</Link></li>
-              <li><Link href="/#gallery" legacyBehavior>Galerie</Link></li>
+
               <li><Link href="/#timeline" legacyBehavior>Časová osa</Link></li>
               <li><Link href="/#memories" legacyBehavior>Vzpomínky</Link></li>
             </ul>

@@ -24,9 +24,7 @@ export default function Navbar() {
           <li>
             <Link href="/#svatebni-informace" className="navbar-link" legacyBehavior>Svatební informace</Link>
           </li>
-          <li>
-            <Link href="/#gallery" className="navbar-link" legacyBehavior>Galerie</Link>
-          </li>
+
           <li>
             <Link href="/#timeline" className="navbar-link" legacyBehavior>Naše cesta</Link>
           </li>
@@ -34,6 +32,12 @@ export default function Navbar() {
             <Link href="/#misto-svatby" className="navbar-link" legacyBehavior>Místo svatby</Link>
           </li>
         </ul>
+        
+        <Link href="/rsvp" legacyBehavior>
+          <button className="navbar-confirm-button">
+            Potvrdit účast
+          </button>
+        </Link>
       </div>
       <style jsx>{`
         .navbar {
@@ -100,6 +104,24 @@ export default function Navbar() {
           border-radius: 3px;
         }
 
+        .navbar-confirm-button {
+          background-color: #3b82f6;
+          color: white;
+          border: none;
+          padding: 0.5rem 1.5rem;
+          border-radius: 9999px;
+          font-weight: 500;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          font-size: 0.9rem;
+        }
+
+        .navbar-confirm-button:hover {
+          background-color: #2563eb;
+        }
+
         @media (max-width: 768px) {
           .navbar-toggle {
             display: flex;
@@ -125,6 +147,11 @@ export default function Navbar() {
             padding: 0.75rem 2rem;
             display: block;
             width: 100%;
+          }
+
+          .navbar-confirm-button {
+            margin: 1rem 2rem;
+            width: calc(100% - 4rem);
           }
         }
       `}</style>
