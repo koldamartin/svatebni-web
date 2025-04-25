@@ -10,6 +10,7 @@ export default function Footer() {
           <div className="footer-logo">
             <h3>Created</h3>
             <p>Vibe coded in <span className="heart">❤️</span> <a href="https://windsurf.com" target="_blank" rel="noopener noreferrer">Windsurf.com</a></p>
+            <p className="ai-credits">Made by <strong>Claude Sonnet 3.7</strong> with contributions from <strong>GPT-4.1</strong></p>
             <h3 style={{ marginTop: '1rem' }}>Webpage code</h3>
             <p><a href="https://github.com/koldamartin/svatebni-web" target="_blank" rel="noopener noreferrer">GitHub</a></p>
           </div>
@@ -35,6 +36,7 @@ export default function Footer() {
         
         <div className="footer-bottom">
           <p>&copy; {currentYear} Svatba Bára & Martin. Všechna práva vyhrazena.</p>
+
         </div>
       </div>
       <style jsx>{`
@@ -87,6 +89,12 @@ export default function Footer() {
           text-align: center;
           padding-top: 2rem;
           border-top: 1px solid rgba(92, 79, 61, 0.2);
+        }
+        
+        .ai-credits {
+          margin-top: 1rem;
+          font-size: 1.1rem;
+          color: var(--text-color);
         }
         
         @media (max-width: 768px) {
