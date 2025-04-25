@@ -42,14 +42,14 @@ export default function ChatBot() {
   return (
     <section id="chatbot" className="section chatbot">
       <div className="container">
-        <h2 className="section-title">Zeptejte se nás</h2>
+        <h2 className="section-title">Zeptejte se našeho AI asistenta</h2>
         
         <div className="chatbot-container">
           <div className="chat-messages">
             {chatHistory.length === 0 ? (
               <div className="empty-chat">
                 <Bot size={40} />
-                <p>Napište nám zprávu a my vám odpovíme!</p>
+                <p>Zeptejte se nás našeho AI asistenta, ten ví o svatbě mnohem víc.</p>
               </div>
             ) : (
               chatHistory.map((chat, index) => (
@@ -215,6 +215,12 @@ export default function ChatBot() {
           }
         }
       `}</style>
-    </section>
+
+    <style jsx>{`
+      .chatbot {
+        background-color: var(--primary-color);
+      }
+    `}</style>
+  </section>
   );
 }

@@ -17,7 +17,7 @@ export default function Footer() {
             <ul>
               <li><Link href="/" legacyBehavior>Domů</Link></li>
               <li><Link href="/#svatebni-informace" legacyBehavior>Svatební informace</Link></li>
-              <li><Link href="/#gallery" legacyBehavior>Galerie</Link></li>
+
               <li><Link href="/#timeline" legacyBehavior>Časová osa</Link></li>
               <li><Link href="/#memories" legacyBehavior>Vzpomínky</Link></li>
             </ul>

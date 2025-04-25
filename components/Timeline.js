@@ -18,7 +18,7 @@ export default function Timeline() {
     {
       date: '28. března 2025',
       title: 'Zasnoubení u hromady hnoje',
-      description: 'Martin požádal báru o ruku při západu slunce u hromady hnoje a ani nepočkal jestli Bára řekne ano.'
+      description: 'Martin požádal Báru o ruku při západu slunce u hromady hnoje a ani nepočkal jestli Bára řekne ano.'
     },
     {
       date: '4. října 2025',
