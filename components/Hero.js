@@ -9,8 +9,6 @@ export default function Hero() {
           <h1>Svatba Báry a Martina</h1>
           <p>4. října na jezeře v Poděbradech</p>
           <div className="hero-buttons">
-            <a href="#gallery" className="btn">Prohlédnout galerii</a>
-            <a href="#svatebni-informace" className="btn btn-outline">Svatební informace</a>
             <Link href="/rsvp" legacyBehavior><a className="btn">Potvrď účast</a></Link>
           </div>
         </div>
