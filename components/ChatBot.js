@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import { Send, Bot, User } from 'lucide-react';
+import { Send, User } from 'lucide-react';
 import { motion } from 'framer-motion';
+import ChatBotIcon from './icons/ChatBotIcon';
 
 export default function ChatBot() {
   const [message, setMessage] = useState('');
@@ -48,7 +49,7 @@ export default function ChatBot() {
           <div className="chat-messages">
             {chatHistory.length === 0 ? (
               <div className="empty-chat">
-                <Bot size={40} />
+                <ChatBotIcon size={40} />
                 <p>Zeptejte se nás našeho AI asistenta, ten ví o svatbě mnohem víc.</p>
               </div>
             ) : (
@@ -61,7 +62,7 @@ export default function ChatBot() {
                   transition={{ duration: 0.3 }}
                 >
                   <div className="message-icon">
-                    {chat.sender === 'bot' ? <Bot size={20} /> : <User size={20} />}
+                    {chat.sender === 'bot' ? <ChatBotIcon size={20} /> : <User size={20} />}
                   </div>
                   <div className="message-text">{chat.text}</div>
                 </motion.div>
