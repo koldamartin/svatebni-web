@@ -9,8 +9,7 @@ export default function Footer() {
         <div className="footer-content">
           <div className="footer-logo">
             <h3>Created</h3>
-            <p>Vibe coded in <span className="heart">❤️</span> <a href="https://windsurf.com" target="_blank" rel="noopener noreferrer">Windsurf.com</a></p>
-            <p className="ai-credits">Made by <strong>Claude Sonnet 3.7</strong> with contributions from <strong>GPT-4.1</strong></p>
+            <p>Vytvoření pomocí <span className="heart">❤️</span> <a href="https://windsurf.com" target="_blank" rel="noopener noreferrer">Windsurf.com</a></p>
             <h3 style={{ marginTop: '1rem' }}>Webpage code</h3>
             <p><a href="https://github.com/koldamartin/svatebni-web" target="_blank" rel="noopener noreferrer">GitHub</a></p>
           </div>
@@ -30,7 +29,8 @@ export default function Footer() {
             <h4>Kontakt</h4>
             <p>Email: mkko@seznam.cz</p>
             <p>Email: vesela.bara@seznam.cz</p>
-            <p>Telefon: +420 721 769 674</p>
+            <p>Telefon Martin: +420 721 769 674</p>
+            <p>Telefon Bára: +420 731 053 023</p>
           </div>
         </div>
         

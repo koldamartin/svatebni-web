@@ -9,13 +9,14 @@ export default function SvatebníInformace() {
         <div className="story-content">
           <div className="story-text">
   <p>
-    Počet hostů bude přibližně 80–100. Děti i pejsci jsou u nás srdečně vítáni (jen prosíme, aby si váš pejsek rozuměl s naším Edou). Pro děti bude připraven menší skákací hrad, takže o zábavu nebude nouze.
+Jsme rádi, že se těšíte na naši svatbu!  Prosíme co nejdříve potvrďte svoji účast na naší svatbě. Děti jsou u nás srdečně vítáni. Bude pro ně připraven menší skákací hrad, takže o zábavu nebude nouze.
+ Pokud budete sebou chtít vzít  svého chlupatého mazlíčka (myslíme psa), kontaktujte nás přímo prosím.
   </p>
-  <p>
-    Na místě se můžete těšit na polévku, guláš a bohatý raut. K ochutnání bude několik druhů piv, zejména svrchně kvašené speciály z okolních minipivovarů, ale také prosecco, víno a nealko nápoje.
+  <p>Ohledně svatebního daru bychom Vás rádi informovali, že Vaše přítomnost je pro nás nejdůležitější. Pokud byste však chtěli přispět k oslavě, budeme vděční za drobné občerstvení, které obohatí svatební pohoštění. Na místě bude připraven raut, domácí guláš, polévka a grilovaná kýta. V případě, že byste nás přesto chtěli obdarovat jiným způsobem, s vděčností přijmeme finanční příspěvek.
   </p>
-  <p>
-    Profesionálního fotografa nemáme, a proto budeme moc rádi, když zachytíte pár momentek a podělíte se s námi. DJ jsme také nezajistili, ale hudba bude – k dispozici bude notebook se Spotify a možná dorazí i kapela.
+  <p>Profesionálního fotografa nemáme, a proto budeme moc rádi, když zachytíte pár momentek a podělíte se s námi ve sdíleném albu.</p>
+  <p>Hudba bude zajištěna sdíleným playlistem na Spotify a možná dorazí i kapela.</p>
+  <p>V objektu je k dispozici cca 20 lůžek pro nejbližší rodinu, dále bude možnost spát na pozemku ve vlastním stanu. Jiné ubytování bude možné v centru Poděbrad v penzionu či na ubytovně. Bližší informace poskytneme později. Prosím, vyplňte do formuláře pro <a href="/rsvp" className="underline">potvrzení účasti</a> svoje preference o ubytování. 
   </p>
       </div>
       <div className="story-image">
