@@ -12,34 +12,29 @@ export default function WeddingVenue() {
                 romantickou atmosféru obklopenou přírodou a klidnou vodní hladinou.
               </p>
               <p>
-                Pro všechny hosty je k dispozici dostatek parkovacích míst přímo u objektu, takže
-                se nemusíte obávat, kam zaparkovat.
+                Svatební obřad i následná oslava se budou konat v objektu s přístupem
+                na venkovní terasu, která poskytuje nádherný výhled na jezero.
               </p>
               <p>
-                Svatební obřad i následná oslava se budou konat v rozlehlé budově s přístupem
-                na venkovní terasu, která poskytuje nádherný výhled na jezero. Venkovní prostory
-                jsou ideální pro letní oslavu a pořízení krásných fotografií.
-              </p>
-              <p>
-                V případě nepříznivého počasí máme připravené vnitřní prostory, které jsou
-                klimatizované a nabízejí stejně příjemnou atmosféru.
+                V případě nepříznivého počasí máme připravené party stany.
               </p>
             </div>
             
             <div className="venue-details">
               <div className="detail-item">
                 <h3>Adresa</h3>
-                <p>Jezerní 345, Poděbrady, 290 01</p>
+                <p>Viz mapa, poblíž poděbradského kempu u jezera, Poděbrady, 290 01</p>
               </div>
               
               <div className="detail-item">
                 <h3>Parkování</h3>
-                <p>Dostatek parkovacích míst přímo u objektu</p>
+                <p>Bližší informace o parkování poskytneme později.</p>
               </div>
               
               <div className="detail-item">
                 <h3>Ubytování</h3>
-                <p>Možnost ubytování přímo v areálu nebo v blízkém okolí</p>
+                <p>V objektu je k dispozici ubytování pro rodinu, bude možnost spát na pozemku ve vlastním stanu nebo bude možné přespat v centru Poděbrad.
+                 </p>
               </div>
             </div>
           </div>
