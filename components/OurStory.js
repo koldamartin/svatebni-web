@@ -1,119 +1,190 @@
+// components/OurStory.js
+
 import Image from 'next/image';
 
+
 export default function SvatebníInformace() {
+
   return (
+
     <section id="svatebni-informace" className="section svatebni-informace">
+
       <div className="container">
+
         <h2 className="section-title">Svatební informace</h2>
-        
-        <div className="story-content">
-          <div className="story-text">
-  <p>
-Jsme rádi, že se těšíte na naši svatbu!  Prosíme co nejdříve potvrďte svoji účast na naší svatbě. Děti jsou u nás srdečně vítáni. Bude pro ně připraven menší skákací hrad, takže o zábavu nebude nouze.
- Pokud budete sebou chtít vzít  svého chlupatého mazlíčka (myslíme psa), kontaktujte nás přímo prosím.
-  </p>
-  <p>Ohledně svatebního daru bychom Vás rádi informovali, že Vaše přítomnost je pro nás nejdůležitější. Pokud byste však chtěli přispět k oslavě, budeme vděční za drobné občerstvení, které obohatí svatební pohoštění. Na místě bude připraven raut, domácí guláš, polévka a grilovaná kýta. V případě, že byste nás přesto chtěli obdarovat jiným způsobem, s vděčností přijmeme finanční příspěvek.
-  </p>
-  <p>Profesionálního fotografa nemáme, a proto budeme moc rádi, když zachytíte pár momentek a podělíte se s námi ve sdíleném albu.</p>
-  <p>Hudba bude zajištěna sdíleným playlistem na Spotify a možná dorazí i kapela.</p>
-  <p>V objektu je k dispozici cca 20 lůžek pro nejbližší rodinu, dále bude možnost spát na pozemku ve vlastním stanu. Jiné ubytování bude možné v centru Poděbrad v penzionu či na ubytovně. Bližší informace poskytneme později. Prosím, vyplňte do formuláře pro <a href="/rsvp" className="underline">potvrzení účasti</a> svoje preference o ubytování. 
-  </p>
+
+
+        {/* Removed the story-image div as the image is now the background */}
+
+        <div className="story-text-columns"> {/* New container for two-column text */}
+
+            <div className="info-block">
+
+              <p>
+
+                Jsme nadšení, že s námi chcete oslavit náš velký den! Prosíme, <strong>co nejdříve <a href="/rsvp" className="underline">potvrďte svoji účast</a></strong>, abychom měli přehled.
+
+              </p>
+
+            </div>
+
+            <div className="info-block">
+
+              <p>
+
+                <strong>Děti jsou srdečně vítány!</strong> Pro malé hosty bude připraven menší skákací hrad, takže o zábavu nebude nouze.
+
+              </p>
+
+              <p>
+
+                Pokud byste rádi vzali s sebou svého <strong>čtyřnohého parťáka (pejska)</strong>, dejte nám prosím vědět předem.
+
+              </p>
+
+            </div>
+
+            <div className="info-block">
+
+              <p>
+
+                <strong>Svatební dary:</strong> Vaše přítomnost je pro nás tím největším darem. Pokud byste nás přesto chtěli potěšit, budeme rádi za jakýkoliv příspěvek do našeho svatebního rautu (něco dobrého na zub nebo k pití). Na místě bude zajištěn raut, domácí guláš, polévka a grilovaná kýta. Případné finanční příspěvky s vděčností využijeme na naši svatební cestu.
+
+              </p>
+
+            </div>
+
+            <div className="info-block">
+
+              <p>
+
+                <strong>Fotografie:</strong> Profesionálního fotografa mít nebudeme. O to více oceníme, když sami zachytíte momentky z celého dne a večera! Fotky pak prosím sdílejte s námi ve sdíleném albu (odkaz dodáme později).
+
+              </p>
+
+              <p>
+
+                <strong>Hudba:</strong> O hudební doprovod se postará sdílený playlist na Spotify (přispět může kdokoliv!) a možná dorazí i živá kapela jako překvapení.
+
+              </p>
+
+            </div>
+
+            <div className="info-block">
+
+              <p>
+
+                <strong>Ubytování:</strong> V objektu je k dispozici omezený počet lůžek (cca 20) primárně pro nejbližší rodinu. Dále je možné přespat ve vlastním stanu na přilehlém pozemku. Další možnosti ubytování jsou v penzionech či ubytovnách v centru Poděbrad. Prosíme, <strong>vyplňte své preference ohledně ubytování</strong> v <a href="/rsvp" className="underline">formuláři pro potvrzení účasti</a>. Bližší informace k ubytování poskytneme brzy.
+
+              </p>
+
+            </div>
+
+           {/* The quote div is removed as it was part of the story-grid structure */}
+
+        </div>
+
       </div>
-      <div className="story-image">
-        <Image
-          src="/pictures/20231126_141728.jpg"
-          alt="Naše společná fotografie"
-          width={400}
-          height={300}
-          style={{ width: '100%', height: 'auto', maxWidth: '400px' }}
-          className="fade-border"
-          priority
-        />
-      </div>
-    </div>
-  </div>
+
 
       <style jsx>{`
-        .our-story {
-          background-color: var(--light-color);
-        }
-        
-        .story-content {
-          display: grid;
-          grid-template-columns: 3fr 2fr;
-          gap: 3rem;
-          align-items: center;
-        }
-        .story-image {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        .fade-border {
-          border-radius: 24px;
-          border: 4px solid #fff;
-          box-shadow: 0 4px 32px 0 rgba(0,0,0,0.12);
-          position: relative;
-          z-index: 1;
-          /* Fading border using a mask */
-          -webkit-mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
-          mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
-        }
-        
-        .story-text p {
-          margin-bottom: 1.5rem;
-          line-height: 1.8;
-          font-size: 1.1rem;
-        }
-        
-        .story-quote {
-          padding: 2rem;
-          background-color: var(--primary-color);
-          border-radius: 8px;
-          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        blockquote {
-          font-family: var(--font-main);
-          font-size: 1.5rem;
-          line-height: 1.6;
+
+        .svatebni-informace {
+          padding: 4rem 0;
           color: var(--text-color);
-          font-style: italic;
-          margin-bottom: 1rem;
+        }
+
+        .container {
           position: relative;
         }
-        
-        blockquote::before {
-          content: '\u201C';
-          font-size: 4rem;
-          position: absolute;
-          left: -1.5rem;
-          top: -1rem;
-          color: var(--secondary-color);
-          opacity: 0.5;
+
+        .section-title {
+
+          text-align: center;
+
+          margin-bottom: 2rem;
+
+          color: #333; /* Changed to dark color for better readability without background */
+          position: relative;
+
+          text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7); /* Add shadow for readability */
+          z-index: 2;
+
         }
-        
-        cite {
-          display: block;
+
+
+        /* Removed .story-grid as image is now background */
+
+
+        .story-text-columns {
+
+          display: grid;
+
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Two columns, responsive */
+
+          gap: 1.5rem; /* Gap between columns and rows */
+
+        }
+
+
+        .info-block {
+
+          background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+
+          border-radius: 8px;
+
+          padding: 1.25rem; /* Slightly increased padding */
+
+          margin-bottom: 0; /* Remove margin-bottom as gap handles spacing */
+
+          box-shadow: 0 2px 12px rgba(0,0,0,0.1); /* Slightly more visible shadow */
+
+          transition: background-color 0.3s ease;
+
+        }
+
+
+        .info-block p {
+
+          margin-bottom: 0.75rem;
+
+          line-height: 1.6;
+
           font-size: 1rem;
-          margin-top: 1rem;
-          text-align: right;
-          font-style: normal;
-          color: var(--secondary-color);
+
         }
-        
+
+
+        .info-block p:last-child {
+
+          margin-bottom: 0;
+
+        }
+
+
+        /* Quote styles removed as the quote div was removed */
+
+
         @media (max-width: 768px) {
-          .story-content {
-            grid-template-columns: 1fr;
+
+          .story-text-columns {
+
+            grid-template-columns: 1fr; /* Stack columns on smaller screens */
+
           }
-          .story-image {
-            margin-top: 2rem;
+
+          .svatebni-informace {
+
+             padding: 3rem 0; /* Adjust padding on mobile */
+
           }
-          .story-quote {
-            margin-top: 1rem;
-          }
+
         }
+
       `}</style>
+
     </section>
+
   );
+
 }

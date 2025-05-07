@@ -96,7 +96,7 @@ export default function Hero() {
         <div className={`hero-image-container ${isVisible ? 'slide-in' : ''}`}>
           <div className="image-frame">
             <Image 
-              src="/pictures/20220418_121058.jpg" 
+              src="/pictures/Bára.jpg" 
               alt="Svatební fotografie" 
               width={500} 
               height={600}
@@ -147,6 +147,7 @@ export default function Hero() {
           position: relative;
           z-index: 2;
           display: flex;
+          flex-direction: row-reverse;
           align-items: center;
           justify-content: space-between;
           gap: 3rem;
