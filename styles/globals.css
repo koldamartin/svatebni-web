@@ -1,6 +1,6 @@
-/* Global Styles */
+/* styles/globals.css */
 :root {
-  --primary-color: #f5e6e0; /* very light orange */
+  --primary-color: #f5e6e0; /* very light orange - keeping this as the pink tone from your description is subjective. If you meant a different pink, please provide the hex code. */
   --secondary-color: #3887BE; /* darker blue */
   --text-color: #5c4f3d;
   --light-color: #ffffff;
