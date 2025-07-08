@@ -424,10 +424,20 @@ export default function Hero() {
 
           .hero-image-container {
             justify-content: center;
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+          }
+          
+          .hero-image {
+            width: 100%;
+            height: auto;
           }
           
           .image-frame {
             transform: rotate(0deg);
+            padding: 5px;
+            max-width: 100%;
           }
           
           .element-1 {

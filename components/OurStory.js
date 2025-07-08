@@ -18,6 +18,17 @@ export default function SvatebníInformace() {
 
         <div className="story-text-columns"> {/* New container for two-column text */}
 
+            <div className="info-block" style={{ 
+              backgroundColor: '#fff5e6',
+              border: '2px solid #1e90ff',
+              boxShadow: '0 0 0 1px rgba(30, 144, 255, 0.4)'
+            }}>
+              <p>
+                <strong>Aktualita 8.7.2025</strong><br />
+                Budeme rádi pokud na svatbu můžete připravit třeba něco dobrého na zub. Aby se nám nesešlo to samé, kontaktuje prosím Báru.
+              </p>
+            </div>
+
             <div className="info-block">
 
               <p>
@@ -48,7 +59,7 @@ export default function SvatebníInformace() {
 
               <p>
 
-                <strong>Svatební dary:</strong> Vaše přítomnost je pro nás tím největším darem. Pokud byste nás přesto chtěli potěšit, budeme rádi za jakýkoliv příspěvek do našeho svatebního rautu (něco dobrého na zub nebo k pití). Na místě bude zajištěn raut, domácí guláš, polévka a grilovaná kýta. Případné finanční příspěvky s vděčností využijeme na naši svatební cestu.
+                <strong>Svatební dary:</strong> Vaše přítomnost je pro nás tím největším darem. Na místě bude zajištěn raut, domácí guláš, polévka a grilovaná kýta. Případné finanční příspěvky s vděčností využijeme na naši svatební cestu.
 
               </p>
 
@@ -128,21 +139,18 @@ export default function SvatebníInformace() {
 
 
         .info-block {
-
           background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
-
           border-radius: 8px;
-
           padding: 1.25rem; /* Slightly increased padding */
-
           margin-bottom: 0; /* Remove margin-bottom as gap handles spacing */
-
           box-shadow: 0 2px 12px rgba(0,0,0,0.1); /* Slightly more visible shadow */
-
-          transition: background-color 0.3s ease;
-
+          transition: all 0.3s ease;
         }
 
+        .info-block:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
 
         .info-block p {
 

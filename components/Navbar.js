@@ -279,6 +279,13 @@ export default function Navbar() {
           height: 16px;
           transition: transform 0.3s ease;
         }
+        
+        @media (max-width: 768px) {
+          .button-icon {
+            width: 12px;
+            height: 12px;
+          }
+        }
 
         .navbar-confirm-button:hover {
           background: linear-gradient(135deg, #2563eb, #1d4ed8);
@@ -352,11 +359,12 @@ export default function Navbar() {
           .navbar-menu li:nth-child(4) { --i: 4; }
 
           .navbar-link {
-            padding: 0.75rem 2rem;
+            padding: 0.75rem 2rem 0.75rem 4rem;
             display: block;
             width: 100%;
-            text-align: center;
+            text-align: left;
             font-size: 1rem;
+            transition: padding 0.3s ease;
           }
 
           .navbar-link:after {
@@ -364,10 +372,10 @@ export default function Navbar() {
           }
 
           .navbar-confirm-button {
-            margin: 1.5rem auto 0.5rem;
-            padding: 0.7rem 2rem;
-            font-size: 0.9rem;
-            width: 80%;
+            margin: 1.2rem auto 0.5rem;
+            padding: 0.5rem 1.2rem;
+            font-size: 0.75rem;
+            width: 70%;
             justify-content: center;
           }
         }
