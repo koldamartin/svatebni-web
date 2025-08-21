@@ -2,9 +2,8 @@
 'use client';
 
 import Head from 'next/head';
-import Link from 'next/link'; // Keep Link in case you add navigation later
 import { useRouter } from 'next/router';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 export default function RSVP() {
   const router = useRouter();
@@ -38,8 +37,7 @@ export default function RSVP() {
     <>
       <Head>
         <title>Potvrď účast | Svatba Báry a Martina</title>
-        {/* Link a modern font, e.g., from Google Fonts */}
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
       </Head>
       <section className="rsvp-section"> {/* Renamed class for clarity */}
         <div className="container">

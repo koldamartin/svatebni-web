@@ -63,11 +63,9 @@ export default function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container navbar-container">
-        <Link href="/" className="navbar-logo" legacyBehavior>
-          <a className="navbar-logo-link">
-            <span className="logo-text">BÁRA & MARTIN</span>
-          </a>
-        </Link>
+         <Link href="/" className="navbar-logo navbar-logo-link">
+           <span className="logo-text">BÁRA & MARTIN</span>
+         </Link>
 
         <div className="navbar-toggle" onClick={() => setIsMenuOpen(!isMenuOpen)}>
           <span className={isMenuOpen ? 'active' : ''}></span>
@@ -76,42 +74,56 @@ export default function Navbar() {
         </div>
 
         <ul className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
-          <li>
-            <Link href="/" className={`navbar-link ${activeSection === '' && scrolled === false ? 'active' : ''}`} legacyBehavior>
-              <a onClick={(e) => {
-                e.preventDefault();
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-                setIsMenuOpen(false);
-              }}>Úvod</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/#svatebni-informace" className={`navbar-link ${activeSection === 'svatebni-informace' ? 'active' : ''}`} legacyBehavior>
-              <a onClick={(e) => scrollToSection(e, 'svatebni-informace')}>Svatební informace</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/#timeline" className={`navbar-link ${activeSection === 'timeline' ? 'active' : ''}`} legacyBehavior>
-              <a onClick={(e) => scrollToSection(e, 'timeline')}>Naše cesta</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/#misto-svatby" className={`navbar-link ${activeSection === 'misto-svatby' ? 'active' : ''}`} legacyBehavior>
-              <a onClick={(e) => scrollToSection(e, 'misto-svatby')}>Místo svatby</a>
-            </Link>
-          </li>
+           <li>
+             <Link 
+               href="/" 
+               className={`navbar-link ${activeSection === '' && scrolled === false ? 'active' : ''}`}
+               onClick={(e) => {
+                 e.preventDefault();
+                 window.scrollTo({ top: 0, behavior: 'smooth' });
+                 setIsMenuOpen(false);
+               }}
+             >
+               Úvod
+             </Link>
+           </li>
+           <li>
+             <Link 
+               href="/#svatebni-informace" 
+               className={`navbar-link ${activeSection === 'svatebni-informace' ? 'active' : ''}`}
+               onClick={(e) => scrollToSection(e, 'svatebni-informace')}
+             >
+               Svatební informace
+             </Link>
+           </li>
+           <li>
+             <Link 
+               href="/#timeline" 
+               className={`navbar-link ${activeSection === 'timeline' ? 'active' : ''}`}
+               onClick={(e) => scrollToSection(e, 'timeline')}
+             >
+               Naše cesta
+             </Link>
+           </li>
+           <li>
+             <Link 
+               href="/#misto-svatby" 
+               className={`navbar-link ${activeSection === 'misto-svatby' ? 'active' : ''}`}
+               onClick={(e) => scrollToSection(e, 'misto-svatby')}
+             >
+               Místo svatby
+             </Link>
+           </li>
         </ul>
 
-        <Link href="/rsvp" legacyBehavior>
-          <a className="navbar-confirm-button-container">
-            <button className="navbar-confirm-button">
-              <span>Potvrdit účast</span>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="button-icon">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-          </a>
-        </Link>
+         <Link href="/rsvp" className="navbar-confirm-button-container">
+           <button className="navbar-confirm-button">
+             <span>Potvrdit účast</span>
+             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="button-icon">
+               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+             </svg>
+           </button>
+         </Link>
       </div>
       <style jsx>{`
         .navbar {

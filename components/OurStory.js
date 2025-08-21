@@ -1,7 +1,5 @@
 // components/OurStory.js
 
-import Image from 'next/image';
-
 
 export default function SvatebníInformace() {
 
@@ -14,6 +12,7 @@ export default function SvatebníInformace() {
         <h2 className="section-title">Svatební informace</h2>
 
 
+
         {/* Removed the story-image div as the image is now the background */}
 
         <div className="story-text-columns"> {/* New container for two-column text */}
@@ -24,20 +23,23 @@ export default function SvatebníInformace() {
               boxShadow: '0 0 0 1px rgba(30, 144, 255, 0.4)'
             }}>
               <p>
-                <strong>Aktualita 8.7.2025</strong><br />
+                <strong>Program svatby</strong><br />
+                Obřad začíná v 12 hodin. Příjezd hostů od 10:30. Dress code je standardní. Pánové oblek, dámy šaty libovolné barvy.
+              </p>
+            </div>
+
+            <div className="info-block" style={{ 
+              backgroundColor: '#fff5e6',
+              border: '2px solid #1e90ff',
+              boxShadow: '0 0 0 1px rgba(30, 144, 255, 0.4)'
+            }}>
+              <p>
+                <strong>Prosba k hostům</strong><br />
                 Budeme rádi pokud na svatbu můžete připravit třeba něco dobrého na zub. Aby se nám nesešlo to samé, kontaktuje prosím Báru.
               </p>
             </div>
 
-            <div className="info-block">
 
-              <p>
-
-                Jsme nadšení, že s námi chcete oslavit náš velký den! Prosíme, <strong>co nejdříve <a href="/rsvp" className="underline">potvrďte svoji účast</a></strong>, abychom měli přehled.
-
-              </p>
-
-            </div>
 
             <div className="info-block">
 
@@ -75,7 +77,7 @@ export default function SvatebníInformace() {
 
               <p>
 
-                <strong>Hudba:</strong> O hudební doprovod se postará sdílený playlist na Spotify (přispět může kdokoliv!) a možná dorazí i živá kapela jako překvapení.
+                <strong>Hudba:</strong> Během dne vystoupí kapela <a href="https://www.souflsou.cz/" className="music-link">Šouflšou</a>. Večer pak namísto DJje bude hrát laptop se Spotify playlistem.
 
               </p>
 
@@ -85,7 +87,7 @@ export default function SvatebníInformace() {
 
               <p>
 
-                <strong>Ubytování:</strong> V objektu je k dispozici omezený počet lůžek (cca 20) primárně pro nejbližší rodinu. Dále je možné přespat ve vlastním stanu na přilehlém pozemku. Další možnosti ubytování jsou v penzionech či ubytovnách v centru Poděbrad. Prosíme, <strong>vyplňte své preference ohledně ubytování</strong> v <a href="/rsvp" className="underline">formuláři pro potvrzení účasti</a>. Bližší informace k ubytování poskytneme brzy.
+                <strong>Ubytování:</strong> V objektu je k dispozici omezený počet lůžek (cca 20) primárně pro nejbližší rodinu. Dále je možné přespat ve stanu na pozemku. Těm co zavčas vyplnili formulář jsme pak nabízeli bydlení v přilehlém hotelu. 
 
               </p>
 
