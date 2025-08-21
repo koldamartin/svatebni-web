@@ -29,6 +29,16 @@ a {
   text-decoration: none;
 }
 
+.music-link {
+  color: #3b82f6 !important; /* blue-500 */
+  text-decoration: underline !important;
+  transition: color 0.2s ease;
+}
+
+.music-link:hover {
+  color: #2563eb !important; /* blue-600 */
+}
+
 h1, h2, h3, h4, h5 {
   font-family: var(--font-main);
   font-weight: 500;

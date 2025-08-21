@@ -84,12 +84,12 @@ export default function Hero() {
           </div>
           
           <div className="hero-buttons">
-            <Link href="/rsvp" legacyBehavior>
-              <a className="btn btn-primary pulse-animation">Potvrď účast</a>
-            </Link>
-            <Link href="#chatbot" legacyBehavior>
-              <a className="btn btn-outline fade-in-delay">Chci vědět víc</a>
-            </Link>
+             <Link href="/rsvp" className="btn btn-primary pulse-animation">
+               Potvrď účast
+             </Link>
+             <Link href="#chatbot" className="btn btn-outline fade-in-delay">
+               Chci vědět víc
+             </Link>
           </div>
         </div>
         

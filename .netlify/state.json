@@ -1,20 +1,20 @@
 {
 	"geolocation": {
 		"data": {
-			"city": "Děčín",
+			"city": "Prague",
 			"country": {
 				"code": "CZ",
 				"name": "Czechia"
 			},
 			"subdivision": {
-				"code": "42",
-				"name": "Ústecký kraj"
+				"code": "10",
+				"name": "Prague"
 			},
 			"timezone": "Europe/Prague",
-			"latitude": 50.7155,
-			"longitude": 14.1773,
-			"postalCode": "405 02"
+			"latitude": 50.0471,
+			"longitude": 14.4523,
+			"postalCode": "101 00"
 		},
-		"timestamp": 1746349099890
+		"timestamp": 1755803122825
 	}
 }
